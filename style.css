@@ -1,0 +1,15 @@
+*{
+    font-family: "Rajdhani", serif;
+}
+h2{
+    font-weight: bold;
+}
+header{
+    background-color: #001233;
+}
+header span{
+color: #979DAC;
+}
+header i{
+    color: #979DAC;
+}
