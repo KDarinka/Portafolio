@@ -33,7 +33,7 @@
     </a>
 
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active perfil" aria-current="page">Acerca de mi</a></li>
+      <li class="nav-item boton-perfil"><a id="boton-perfil" href="#" class="nav-link active perfil" aria-current="page">Acerca de mi</a></li>
       <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
       <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
       <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
@@ -42,10 +42,11 @@
   </header>
   <main>
     <!--hero-->
+    <div class="titulo">
     <div class="hero">
       <div class="px-4 py-5 my-5 text-center">
         <img class="d-block mx-auto mb-4 rounded-circle" src="assets/Darinka.jpg" alt="" width="150">
-        <h1 class="display-5 fw-bold text-body-emphasis">Karla Darinka Carrillo Arcos</h1>
+        <h1  class="display-5 fw-bold ">Karla Darinka Carrillo Arcos</h1>
         <!--Texto typewriter-->
         <h4 id="app"></h4>
         <div class="col-lg-6 mx-auto">
@@ -54,22 +55,24 @@
             la tecnología. Mis fortalezas incluyen trabajar en tiempo y forma, gestionar proyectos de manera eficiente y
             ordenada, y actualmente estoy ampliando mis conocimientos para convertirme en programadora fullstack.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Conoce mi trayectoria</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 boton-cv">Link al CV</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <!--Habilidades-->
+    <div class="caja-habilidades">
     <div class="Habilidades container px-4 py-5" id="habilidades">
       <h2 class="pb-2 border-bottom">Habilidades</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
           <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
             <i class="bi bi-laptop p-1"></i>
           </div>
           <div>
-            <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
+            <h3 class="fs-2 ">Desarrollo web</h3>
             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
               probably just keep going until we run out of words.</p>
 
@@ -77,22 +80,22 @@
         </div>
         <div class="col d-flex align-items-start">
           <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
             <i class="bi bi-check2-circle p-1"></i>
           </div>
           <div>
-            <h3 class="fs-2 text-body-emphasis">Metodologia agile/Scrum</h3>
+            <h3 class="fs-2 ">Metodologia agile/Scrum</h3>
             <p>Manejo básico de juntas diarias, sprints y retroalimentaciones.</p>
 
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
             <i class="bi bi-person-fill-gear p-1"></i>
           </div>
           <div>
-            <h3 class="fs-2 text-body-emphasis">Adaptabilidad y creatividad</h3>
+            <h3  class="fs-2 ">Adaptabilidad y creatividad</h3>
             <p>Aprendizaje rápido de nuevas tecnologías y herramientas. Diseño de soluciones innovadoras y adaptadas a
               las necesidades del cliente.</p>
 
@@ -100,11 +103,11 @@
         </div>
         <div class="col d-flex align-items-start">
           <div
-            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+            class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
             <i class="bi bi-file-earmark-easel p-1"></i>
           </div>
           <div>
-            <h3 class="fs-2 text-body-emphasis">Diseño de interfaces</h3>
+            <h3 class="fs-2">Diseño de interfaces</h3>
             <p>Creación de prototipos y diseños funcionales con herramientas como Figma.</p>
 
           </div>
@@ -112,22 +115,24 @@
         <!--Fin habilidades-->
       </div>
     </div>
+  </div>
     <!--proyectos-->
+    <div class="cajita">
     <div id="proyectos" class="proyectos container">
       <h2 class="pb-2 border-bottom">Proyectos</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
             <!--Imagen El-lote-->
-            <img class="bd-placeholder-img card-img-top" src="assets/El-lote24.png" alt="">
+            <img class="bd-placeholder-img card-img-top mt-4" src="assets/El-lote24.png" alt="">
             <div class="card-body">
               <p class="card-text">Carrito de compras El-lote24</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-outline-primary btn-pr"><a target="_blank"
                       href="">Ver</a></button>
                 </div>
-                <small class="text-body-secondary">Python y Django</small>
+                <small class="text">Python y Django</small>
               </div>
             </div>
           </div>
@@ -136,18 +141,18 @@
         <div class="col">
           <div class="card shadow-sm">
             <!--Imagen clon-->
-            <img class="bd-placeholder-img card-img-top" src="assets/Clon-pinterest.png" alt="">
+            <img class="bd-placeholder-img card-img-top mt-4" src="assets/Clon-pinterest.png" alt="">
             <div class="card-body">
               <p class="card-text">
                 Clon Pinterest</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-outline-primary btn-pr"><a target="_blank"
                       href="https://clon-pinterest-ejem.vercel.app">Ver</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-outline-primary  btn-pr"><a target="_blank"
                       href="https://github.com/KDarinka/Clon-pinterest">Github</a></button>
                 </div>
-                <small class="text-body-secondary">HTML, CSS y JS</small>
+                <small class="text">HTML, CSS y JS</small>
               </div>
             </div>
           </div>
@@ -156,16 +161,16 @@
         <div class="col">
           <div class="card shadow-sm">
             <!--Figma-->
-            <img class="bd-placeholder-img card-img-top" src="assets/Figma.png" alt="">
+            <img class="bd-placeholder-img card-img-top mt-4"src="assets/Figma.png" alt="">
             <div class="card-body">
               <p class="card-text">Diseño de plataforma web en figma</p>
               <div class="d-flex justify-content-between align-items-center">
+                <!--https://www.figma.com/design/naydaFUD55PIkiI90bVlDa/Plataforma-Web-OSC?node-id=280-81&t=NcMRnyaT4P1gr7Mf-1-->
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                  <button type="button" class="btn btn-sm btn-outline-primary  btn-pr"><a target="_blank"
                       href="">Ver</a></button>
-
                 </div>
-                <small class="text-body-secondary">Figma</small>
+                <small class="text">Figma</small>
               </div>
             </div>
           </div>
@@ -173,19 +178,21 @@
 
       </div>
     </div>
+  </div>
     <!--Carrusel-->
+
     <div id="testimonios" class="testimonios container mt-5">
       <h2 class="pb-2 border-bottom">Testimonios</h2>
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!--Item-->
-          <div class="carousel-item active">
+          <div class="mt-5 carousel-item active ">
             <div class="d-flex justify-content-center">
               <!--Card-->
-              <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem; ">
                 <img src="assets/test.1.jpeg" class="card-img-top rounded-circle" alt="Imagen testimonio">
-                <h5 class="card-title text-center">#</h5>
-                <h6 class="card-subtitle text-center mb-1 text-body-secondary">Compañera de bootcamp</h6>
+                <h5 class="mt-3 card-title text-center">#</h5>
+                <h6 class="card-subtitle text-center mb-1">Compañera de bootcamp</h6>
                 <div class="card-body">
                   <p class="card-text">He tenido la oportunidad de ver el trabajo de Darinka como programadora y
                     realmente me ha impresionado. Sus habilidades técnicas y su capacidad para desarrollar soluciones
@@ -197,13 +204,13 @@
             </div>
           </div>
           <!--Item-->
-          <div class="carousel-item">
+          <div class=" mt-5 carousel-item">
             <div class="d-flex justify-content-center">
               <!--Card-->
               <div class="card" style="width: 18rem;">
                 <img src="assets/test.2.jpeg" class="card-img-top rounded-circle" alt="imagen de testimonio">
-                <h5 class="card-title text-center">#</h5>
-                <h6 class="card-subtitle text-center mb-1 text-body-secondary">Compañera de bootcamp</h6>
+                <h5 class="mt-3 card-title text-center">#</h5>
+                <h6 class="card-subtitle text-center mb-1">Compañera de bootcamp</h6>
                 <div class="card-body">
                   <p class="card-text">Tuve la gran oportunidad de compartir con Darinka en el bootcamp de
                     Technolochicas Pro. Sin duda alguna, demostró ser una excelente desarrolladora front-end, con una
@@ -215,13 +222,13 @@
             </div>
           </div>
           <!--Item-->
-          <div class="carousel-item">
+          <div class=" mt-5 carousel-item">
             <div class="d-flex justify-content-center">
               <!--Card-->
               <div class="card" style="width: 18rem;">
                 <img src="assets/test.3.jpeg" class="card-img-top rounded-circle" alt="Imagen testimonio">
-                <h5 class="card-title text-center">Araceli Gonzalez Luna</h5>
-                <h6 class="card-subtitle text-center mb-1 text-body-secondary">Compañera de bootcamp</h6>
+                <h5 class="mt-3 card-title text-center">Araceli Gonzalez Luna</h5>
+                <h6 class="card-subtitle text-center mb-1">Compañera de bootcamp</h6>
                 <div class="card-body">
                   <p class="card-text">Como compañera de Darinka durante el Bootcamp de Techonolochicas Pro, considero
                     que es una persona dedicada y atenta que busca mejorar sus habilidades como desarrolladora Frontend.
@@ -232,13 +239,13 @@
             </div>
           </div>
           <!--Item-->
-          <div class="carousel-item">
+          <div class="mt-5 carousel-item ">
             <div class="d-flex justify-content-center">
               <!--Card-->
               <div class="card" style="width: 18rem;">
                 <img src="assets/mentora.jpg" class="card-img-top rounded-circle" alt="Imagen testimonio">
-                <h5 class="card-title text-center">Anel Montes de Oca</h5>
-                <h6 class="card-subtitle text-center mb-1 text-body-secondary">Mentora de Tecnolochicas Pro</h6>
+                <h5 class="mt-3 card-title text-center">Anel Montes de Oca</h5>
+                <h6 class="card-subtitle text-center mb-1">Mentora de Tecnolochicas Pro</h6>
                 <div class="card-body">
                   <p class="card-text">Darinka muestra un rápido progreso en la adquisición de habilidades técnicas
                     clave y una gran disposición para colaborar en proyectos. Su actitud positiva y su voluntad de
@@ -268,13 +275,13 @@
     <div id="contacto" class="px-4 py-5 my-5 text-center">
       <i class="d-block mx-auto mb-4 fs-1 bi bi-chat-dots"></i>
 
-      <h1 class="display-5 fw-bold text-body-emphasis">Contactame</h1>
+      <h1 class="display-5 fw-bold">Contactame</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Estoy aquí para resolver tus dudas, colaborar en nuevos proyectos o simplemente charlar
           sobre ideas innovadoras. ¡No dudes en ponerte en contacto!.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <a href="mailto:daricarrillo.132@gmail.com">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contactame</button>
+            <button type="button" class="btn btn-outline-primary btn-lg px-4">Contactame</button>
           </a>
         </div>
       </div>
@@ -290,8 +297,9 @@
       <li class="nav-item"><a href="https://github.com/KDarinka" class="nav-link px-2 text-body-secondary"><i
             class="bi bi-github"></i>
     </ul>
-    <p class="text-center text-body-secondary">Creado por Darinka Carrillo Arcos, en el bootcamp de <a
+    <p class="text-center">Creado por Darinka Carrillo Arcos, en el bootcamp de <a
         href="https://tecnolochicas.mx">TecnolochicasPro</a></p>
+  
   </footer>
 
   <!--Bootstrap-->
